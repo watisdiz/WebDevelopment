@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toteutus</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Liittää tyylitiedoston -->
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Etusivu</a></li>
+                <li><a href="toteutus.html">Toteutus</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <h1>Kurssin tiedot</h1>
+        <div id="course-info">
+            <!-- Kurssin tiedot tulevat tänne -->
+        </div>
+    </main>
+
+    <script>
+        // Fetchataan JSON-data Mocky-palvelimelta
+        fetch('https://run.mocky.io/v3/299fe19b-34c2-463a-8b51-1b9a4e2007b6')
+            .then(response => response.json())
+            .then(data => {
+                const courseInfoDiv = document.getElementById('course-info');
+                
+                // Luodaan HTML-koodia JSON-datan perusteella
+                const courseInfoHTML = `
+                    <h2>${data.course.name}</h2>
+                    <p>Osallistujia: ${data.course.participants_count}</p>
+                    <p>Kurssi alkaa: ${data.course.start_date}</p>
+                    <p>Kurssi päättyy: ${data.course.end_date}</p>
+                    <p>Kesto viikkoina: ${data.course.duration_weeks}</p>
+                    <h3>Osallistujat:</h3>
+                    <ul>
+                        ${data.course.participants.map(participant => `<li>${participant.name}</li>`).join('')}
+                    </ul>
+                    <img src="${data.course.course_image}" alt="Kurssin kuva">
+                `;
+                
+                courseInfoDiv.innerHTML = courseInfoHTML;
+            })
+            .catch(error => {
+                console.error('Error fetching course data:', error);
+            });
+    </script>
+</body>
+</html>

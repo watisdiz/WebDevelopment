@@ -1,0 +1,81 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Tyylit toteutus.html:lle */
+#course-info {
+    background-color: white;
+    padding: 20px;
+    max-width: 600px;
+    margin: 20px auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#course-info h2 {
+    margin-top: 0;
+}
+
+#course-info ul {
+    list-style: none;
+    padding: 0;
+}
+
+#course-info ul li {
+    background-color: #eee;
+    margin: 5px 0;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+#course-info img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+}
+
+/* Uudet tyylit index.html:lle */
+p#welcome-message {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #333;
+}
+
+img#welcome-image {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+}
