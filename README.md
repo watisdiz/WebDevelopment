@@ -41,4 +41,4 @@ Esittelee kurssitoteutuksen tiedot ja sisältää kaksi HTML-sivua (`index.html`
 ## Lisätiedot
 
 Mocky-palvelimen avulla haettu JSON-tiedosto sisältää kurssitiedot ja voit tarkastella sitä seuraavasta URL-osoitteesta:
-[Mocky JSON-tiedosto](https://run.mocky.io/v3/b7072df8-7ab5-455a-b893-1f0310139b3e)
+[Mocky JSON-tiedosto](https://run.mocky.io/v3/739440ba-5768-4fb8-ab45-a68d97e43c70)
