@@ -28,9 +28,11 @@ Esittelee kurssitoteutuksen tiedot ja sisältää kaksi HTML-sivua (`index.html`
 
 ## Tiedostot
 
-- **index.html**: Kotisivu, jossa on tervetuloviesti ja kuva.
+- **index.html**: Kotisivu, jossa haetaan ja näytetään JSON-datasta kurssitiedot ja osallistujat.
 - **toteutus.html**: Sivusto, joka esittelee kurssitoteutuksen tiedot.
 - **styles.css**: Tyylitiedosto, joka määrittää sivuston ulkoasun.
+- **data.json**: JSON-tiedosto, joka sisältää kurssitiedot yms.
+- **README.md**: Projektin kuvaus ja ohjeet.
 
 ## Käytetyt teknologiat
 
