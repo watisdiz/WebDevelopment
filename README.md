@@ -40,5 +40,5 @@ Esittelee kurssitoteutuksen tiedot ja sisältää kaksi HTML-sivua (`index.html`
 
 ## Lisätiedot
 
-Mocky-palvelimen avulla haettu JSON-tiedosto sisältää kurssitiedot ja voit tarkastella sitä seuraavasta URL-osoitteesta:
-[Mocky JSON-tiedosto](https://run.mocky.io/v3/739440ba-5768-4fb8-ab45-a68d97e43c70)
+GitHub Pages palvelimen avulla haettu JSON-tiedosto sisältää kurssitiedot ja voit tarkastella sitä seuraavasta URL-osoitteesta:
+[JSON-tiedosto](https://watisdiz.github.io/WebDevelopment/data.json)
